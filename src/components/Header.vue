@@ -37,16 +37,16 @@
     data () {
       return {
         modules: [{
-          name: '系统模块4444',
-          id: '11'
+          name: '系统模块',
+          id: ''
         },
         {
-          name: '模块',
-          id: '11'
+          name: 'BusSrvice模块',
+          id: ''
         },
         {
-          name: '博客模块4',
-          id: '11'
+          name: '博客模块',
+          id: ''
         }
         ]
       }

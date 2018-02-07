@@ -5,7 +5,8 @@ import Router from 'vue-router'
 import Full from '@/containers/Full'
 
 // Views
-import Dashboard from '@/views/Dashboard'
+import sysIndex from '@/views/sys/sysindex'
+import sysLog from '@/views/sys/syslog'
 
 Vue.use(Router)
 
@@ -15,17 +16,58 @@ export default new Router({
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     {
-      path: '/',
-      redirect: '/dashboard',
-      name: 'Home',
+      path: '/sys',
+      redirect: '/sys/sysindex',
+      name: '系统模块',
       component: Full,
       children: [
         {
-          path: 'dashboard',
-          name: 'Dashboard',
-          component: Dashboard
+          path: 'sysindex',
+          name: '首页',
+          component: sysIndex
+        },
+        {
+          path: 'system',
+          redirect: '',
+          name: '系统管理',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'syslog',
+              name: '日志管理',
+              component: sysLog
+            }
+          ]
+        },
+        {
+          path: 'resource',
+          redirect: '',
+          name: '资源管理',
+          component: {
+            render (c) { return c('router-view') }
+          },
+          children: [
+            {
+              path: 'sysconfig',
+              name: '字典管理',
+              component: sysLog,
+              children: [
+                {
+                  path: 'add',
+                  name: '字典新增',
+                  component: sysLog
+                }
+              ]
+            },
+            {
+              path: 'sysorg',
+              name: '组织管理',
+              component: sysLog
+            }
+          ]
         }
-
       ]
     }
   ]

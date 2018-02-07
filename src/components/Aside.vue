@@ -3,7 +3,7 @@
     <b-tabs>
       <b-tab title="<i class='icon-list'></i>">
         <Callout class="m-0 py-2 text-muted text-center bg-light text-uppercase">
-          <small><b>Today</b></small>
+          <small><b>今日</b></small>
         </Callout>
         <hr class="transparent mx-3 my-0">
         <Callout variant="warning" class="m-0 py-3">
@@ -17,7 +17,7 @@
          <hr class="mx-3 my-0">
         <hr class="transparent mx-3 my-0">
         <Callout class="m-0 py-2 text-muted text-center bg-light text-uppercase">
-          <small><b>Tomorrow</b></small>
+          <small><b>明日</b></small>
         </Callout>
         <hr class="transparent mx-3 my-0">
          <Callout variant="danger" class="m-0 py-3">

@@ -30,13 +30,13 @@ export default {
   data () {
     return {
       nav: [{
-        name: 'Dashboard',
-        url: '/dashboard',
+        name: '首页',
+        url: '/sys/sysindex',
         icon: 'icon-speedometer'
       },
       {
         title: true,
-        name: 'UI elements',
+        name: '系统模块',
         class: '',
         wrapper: {
           element: '',
@@ -44,104 +44,29 @@ export default {
         }
       },
       {
-        name: 'Components',
-        url: '/components',
+        name: '系统管理',
+        url: '/sys/system',
         icon: 'icon-puzzle',
         children: [
           {
-            name: 'Buttons',
-            url: '/components/buttons',
+            name: '日志管理',
+            url: '/sys/system/syslog',
             icon: 'icon-puzzle'
-          },
-          {
-            name: 'Social Buttons',
-            url: '/components/social-buttons',
-            icon: 'icon-puzzle'
-          },
-          {
-            name: 'Cards',
-            url: '/components/cards',
-            icon: 'icon-puzzle'
-          },
-          {
-            name: 'Forms',
-            url: '/components/forms',
-            icon: 'icon-puzzle'
-          },
-          {
-            name: 'Modals',
-            url: '/components/modals',
-            icon: 'icon-puzzle'
-          },
-          {
-            name: 'Switches',
-            url: '/components/switches',
-            icon: 'icon-puzzle'
-          },
-          {
-            name: 'Tables',
-            url: '/components/tables',
-            icon: 'icon-puzzle'
-          }
-        ]
+          }]
       },
       {
-        name: 'Icons',
-        url: '/icons',
+        name: '资源管理',
+        url: '/sys/resource',
         icon: 'icon-star',
         children: [
           {
-            name: 'Font Awesome',
-            url: '/icons/font-awesome',
+            name: '字典管理',
+            url: '/sys/resource/sysconfig',
             icon: 'icon-star'
           },
           {
-            name: 'Simple Line Icons',
-            url: '/icons/simple-line-icons',
-            icon: 'icon-star'
-          }
-        ]
-      },
-      {
-        name: 'Widgets',
-        url: '/widgets',
-        icon: 'icon-calculator'
-      },
-      {
-        name: 'Charts',
-        url: '/charts',
-        icon: 'icon-pie-chart'
-      },
-      {
-        divider: true
-      },
-      {
-        title: true,
-        name: 'Extras'
-      },
-      {
-        name: 'Pages',
-        url: '/pages',
-        icon: 'icon-star',
-        children: [
-          {
-            name: 'Login',
-            url: '/pages/login',
-            icon: 'icon-star'
-          },
-          {
-            name: 'Register',
-            url: '/pages/register',
-            icon: 'icon-star'
-          },
-          {
-            name: 'Error 404',
-            url: '/pages/404',
-            icon: 'icon-star'
-          },
-          {
-            name: 'Error 500',
-            url: '/pages/500',
+            name: '组织管理',
+            url: '/sys/resource/sysorg',
             icon: 'icon-star'
           }
         ]
