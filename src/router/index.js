@@ -17,7 +17,6 @@ export default new Router({
   routes: [
     {
       path: '/sys',
-      redirect: '/sys/sysindex',
       name: '系统模块',
       component: Full,
       children: [

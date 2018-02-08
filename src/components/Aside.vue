@@ -45,6 +45,9 @@
           <hr class="mx-3 my-0">
       </b-tab>
       <b-tab title="<i class='icon-speech'></i>">
+        <Callout class="m-0 py-2 text-muted text-center bg-light text-uppercase">
+          <small><b>通知</b></small>
+        </Callout>
         <div class="p-3">
           <div class="message">
            <!-- <div class="py-3 pb-5 mr-3 float-left">

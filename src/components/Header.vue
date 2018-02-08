@@ -41,7 +41,7 @@
           id: ''
         },
         {
-          name: 'BusSrvice模块',
+          name: 'BusService模块',
           id: ''
         },
         {
