@@ -4,9 +4,16 @@ import Router from 'vue-router'
 // Containers
 import Full from '@/containers/Full'
 
+// Views - Pages
+import Page404 from '@/views/Page404'
+import Page500 from '@/views/Page500'
+import Login from '@/views/Login'
+import Register from '@/views/Register'
+
 // Views
 import sysIndex from '@/views/sys/sysindex'
 import sysLog from '@/views/sys/syslog'
+import sysModule from '@/views/sys/sysModule'
 
 Vue.use(Router)
 
@@ -37,6 +44,21 @@ export default new Router({
               path: 'syslog',
               name: '日志管理',
               component: sysLog
+            },
+            {
+              path: 'sysmodule',
+              name: '模块管理',
+              component: sysModule,
+              children: [
+                {
+                  path: 'add',
+                  name: '模块新增'
+                },
+                {
+                  path: 'edit',
+                  name: '模块修改'
+                }
+              ]
             }
           ]
         },
@@ -51,21 +73,48 @@ export default new Router({
             {
               path: 'sysconfig',
               name: '字典管理',
-              component: sysLog,
               children: [
                 {
                   path: 'add',
-                  name: '字典新增',
-                  component: sysLog
+                  name: '字典新增'
                 }
               ]
             },
             {
               path: 'sysorg',
-              name: '组织管理',
-              component: sysLog
+              name: '组织管理'
             }
           ]
+        }
+      ]
+    },
+    {
+      path: '/',
+      redirect: '/login',
+      name: '基础模块',
+      component: {
+        render (c) { return c('router-view') }
+      },
+      children: [
+        {
+          path: '404',
+          name: 'Page404',
+          component: Page404
+        },
+        {
+          path: '500',
+          name: 'Page500',
+          component: Page500
+        },
+        {
+          path: 'login',
+          name: 'Login',
+          component: Login
+        },
+        {
+          path: 'register',
+          name: 'Register',
+          component: Register
         }
       ]
     }

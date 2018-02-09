@@ -97,10 +97,10 @@
           table.render(opt);
         })
       },
-      refreshTable: function(){
+      refreshTable(){
         this.tableInit();
       },
-      resetTable: function(){
+      resetTable(){
         $('#username').val("")
         $('#createdate').val("")
         this.tableInit()

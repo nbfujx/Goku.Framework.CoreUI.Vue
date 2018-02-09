@@ -52,6 +52,11 @@ export default {
             name: '日志管理',
             url: '/sys/system/syslog',
             icon: 'icon-puzzle'
+          },
+          {
+            name: '模块管理',
+            url: '/sys/system/sysmodule',
+            icon: 'icon-puzzle'
           }]
       },
       {
