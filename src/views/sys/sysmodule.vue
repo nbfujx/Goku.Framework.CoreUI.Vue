@@ -6,9 +6,9 @@
           <b-card :header="caption">
             <b-row>
               <b-col>
-                <button v-on:click="addModule()" class="layui-btn layui-btn-sm"><i class="icon-plus" ></i>新增</button>
-                <button v-on:click="editModule()" class="layui-btn layui-btn-sm"><i class="icon-plus" ></i>修改</button>
-                <button v-on:click="deleteModule()" class="layui-btn layui-btn-sm layui-btn-danger"><i class="icon-close"></i>删除</button>
+                <button v-on:click="addModule()" class="layui-btn layui-btn-sm"><i class="icon-plus" id="addbtn"></i>新增</button>
+                <button v-on:click="editModule()" class="layui-btn layui-btn-sm"><i class="icon-plus" id="editbtn"></i>修改</button>
+                <button v-on:click="deleteModule()" class="layui-btn layui-btn-sm layui-btn-danger" id="deletebtn"><i class="icon-close"></i>删除</button>
               </b-col>
             </b-row>
             <table class="layui-table table-responsive-sm" id="table" lay-filter="table"></table>
@@ -26,12 +26,15 @@
         data(){
           return {
             caption:'<strong><i class="fa fa-align-justify"></i></strong> 模块列表',
-            dic_ifShow:[{"0":"否","1":"是"	}]
+            dic_ifShow:{"0":"否","1":"是"	},
+            tableObject:{}
           }
         },
         methods: {
           tableInit() {
-            var dic_ifShow=this.dic_ifShow[0];
+            var dic_ifShowin=this.dic_ifShow;
+            var tableObjectin="";
+            console.log(this.tableObject)
             layui.use('table', function() {
               var table = layui.table, $ = layui.jquery;
               var opt = {
@@ -44,9 +47,9 @@
                   , {field: 'name', width: 150, title: '模块名称'}
                   , {field: 'indexPage', width: 150, title: '模块首页'}
                   , {field: 'ifShow', width: 100, title: '是否展示', templet: function(d){
-                        for (var key in dic_ifShow) {
+                        for (var key in dic_ifShowin) {
                           if (key == d.ifShow) {
-                               return dic_ifShow[key];
+                               return dic_ifShowin[key];
                              }
                            }
                       }
@@ -61,7 +64,12 @@
               };
               table.render(opt);
             })
-          }
+          },
+          addModule(){
+            console.log(this.tableObject)
+          },
+          editModule(){},
+          deleteModule(){},
         },
         mounted() {
           this.tableInit()

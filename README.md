@@ -1,5 +1,5 @@
 # Goku.Framework.CoreUI.Vue
-基于 Vue + CoreUi +Layui  开发后台管理程序（Goku.Framework.CoreUI前后端分级实现）
+基于 Vue + CoreUi + iview  开发后台管理程序（Goku.Framework.CoreUI前后端分级实现）
 
 # 说明
 [需同步更新 Goku.WebService 项目](https://gitee.com/nbfujx/Goku.WebService) </br>
