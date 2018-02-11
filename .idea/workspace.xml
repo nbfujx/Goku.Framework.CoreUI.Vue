@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb9165d7-c083-4668-ac7c-6d624002a648" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/Login.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/Page404.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/Page500.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/Register.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/sys/sysmodule.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Full.vue" afterPath="$PROJECT_DIR$/src/containers/Full.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/sys/syslog.vue" afterPath="$PROJECT_DIR$/src/views/sys/syslog.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/sys/sysmodule.vue" afterPath="$PROJECT_DIR$/src/views/sys/sysmodule.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +16,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="sysmodule.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/sys/sysmodule.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1202">
+              <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="syslog.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/sys/syslog.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="85" column="15" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="85" selection-end-column="15" />
+              <folding>
+                <element signature="n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="e#1668#1881#0" expanded="false" />
+                <element signature="e#3622#3657#0" expanded="false" />
+                <element signature="e#3677#3775#0" expanded="false" />
+                <element signature="e#3798#3853#0" expanded="false" />
+                <element signature="n#style#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,10 +79,10 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/views/sys/syslog.vue" />
         <option value="$PROJECT_DIR$/src/containers/Full.vue" />
-        <option value="$PROJECT_DIR$/src/views/sys/sysmodule.vue" />
         <option value="$PROJECT_DIR$/src/views/Login.vue" />
         <option value="$PROJECT_DIR$/src/views/Register.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/views/sys/sysmodule.vue" />
       </list>
     </option>
   </component>
@@ -104,6 +125,24 @@
             <path>
               <item name="Goku.Framework.CoreUI.Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Goku.Framework.CoreUI.Vue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Goku.Framework.CoreUI.Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Goku.Framework.CoreUI.Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Goku.Framework.CoreUI.Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Goku.Framework.CoreUI.Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Goku.Framework.CoreUI.Vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Goku.Framework.CoreUI.Vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -269,7 +308,7 @@
       <workItem from="1517206730411" duration="538000" />
       <workItem from="1517211587402" duration="731000" />
       <workItem from="1517993052594" duration="68000" />
-      <workItem from="1517993465027" duration="30796000" />
+      <workItem from="1517993465027" duration="33288000" />
     </task>
     <task id="LOCAL-00001" summary="初始化一些菜单信息，调整下面包屑信息">
       <created>1518011090706</created>
@@ -306,16 +345,24 @@
       <option name="project" value="LOCAL" />
       <updated>1518181518189</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增基础页面">
+      <created>1518188913751</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518188913751</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40602000" />
+    <option name="totallyTimeSpent" value="43094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25734767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25734767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Weex Documents" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.50595236" order="7" side_tool="true" content_ui="tabs" />
@@ -344,7 +391,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化一些菜单信息，调整下面包屑信息" />
     <MESSAGE value="系统日志模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="系统日志模块" />
+    <MESSAGE value="新增基础页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增基础页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -699,22 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/sys/syslog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="35" />
-          <folding>
-            <element signature="e#1646#3782#0" expanded="false" />
-            <element signature="e#1668#1881#0" expanded="false" />
-            <element signature="e#1901#3600#0" expanded="false" />
-            <element signature="e#3622#3657#0" expanded="false" />
-            <element signature="e#3677#3775#0" expanded="false" />
-            <element signature="e#3798#3853#0" expanded="false" />
-            <element signature="n#style#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -743,14 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="33" column="16" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/sys/sysmodule.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -798,6 +822,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/sys/syslog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="85" column="15" lean-forward="false" selection-start-line="79" selection-start-column="69" selection-end-line="85" selection-end-column="15" />
+          <folding>
+            <element signature="n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#1668#1881#0" expanded="false" />
+            <element signature="e#3622#3657#0" expanded="false" />
+            <element signature="e#3677#3775#0" expanded="false" />
+            <element signature="e#3798#3853#0" expanded="false" />
+            <element signature="n#style#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/sys/sysmodule.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1202">
+          <caret line="65" column="19" lean-forward="false" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
           <folding />
         </state>
       </provider>
