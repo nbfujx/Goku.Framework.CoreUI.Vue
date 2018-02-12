@@ -1,4 +1,5 @@
 <template>
+  <div class="wrapper">
     <div class="animated fadeIn">
       <b-row>
         <b-col cols="12">
@@ -7,7 +8,7 @@
               <b-col cols="3">
                 <b-form-fieldset>
                   <b-input-group left="用户名" class="search-content">
-                    <Input v-model="username" style="width:180px"></Input>
+                    <Input v-model="username" clearable style="width:180px"></Input>
                   </b-input-group>
                 </b-form-fieldset>
               </b-col>
@@ -33,7 +34,7 @@
           </b-card>
         </b-col><!--/.col-->
       </b-row><!--/.row-->
-
+    </div>
     </div>
 </template>
 
@@ -52,19 +53,23 @@
         columns: [
           {
             title: '用户名',
-            key: 'username'
+            key: 'username',
+            width: 100
           },
           {
             title: 'ip地址',
-            key: 'ip'
+            key: 'ip',
+            width: 120
           },
           {
             title: '操作',
-            key: 'operation'
+            key: 'operation',
+            width: 120
           },
           {
             title: '访问地址',
-            key: 'method'
+            key: 'method',
+            width: 180
           },
           {
             title: '参数',
@@ -74,6 +79,7 @@
           {
             title: '访问日期',
             key: 'createDate',
+            width: 120,
             render: (h, params)=>{
               var date =  new Date(params.row.createDate);
               var y = 1900+date.getYear();

@@ -4,16 +4,18 @@ import Router from 'vue-router'
 // Containers
 import Full from '@/containers/Full'
 
-// Views - Pages
+// Views - 基础页面
 import Page404 from '@/views/Page404'
 import Page500 from '@/views/Page500'
 import Login from '@/views/Login'
 import Register from '@/views/Register'
 
-// Views
+// Views - 系统管理
 import sysIndex from '@/views/sys/sysindex'
 import sysLog from '@/views/sys/syslog'
 import sysModule from '@/views/sys/sysModule'
+import sysModuleAdd from '@/views/sys/sysmoduleadd'
+import sysModuleEdit from '@/views/sys/sysmoduleedit'
 
 Vue.use(Router)
 
@@ -48,15 +50,25 @@ export default new Router({
             {
               path: 'sysmodule',
               name: '模块管理',
-              component: sysModule,
+              redirect: '/sys/system/sysmodule/list',
+              component: {
+                render (c) { return c('router-view') }
+              },
               children: [
                 {
+                  path: 'list',
+                  name: '模块列表',
+                  component: sysModule
+                },
+                {
                   path: 'add',
-                  name: '模块新增'
+                  name: '模块新增',
+                  component: sysModuleAdd
                 },
                 {
                   path: 'edit',
-                  name: '模块修改'
+                  name: '模块修改',
+                  component: sysModuleEdit
                 }
               ]
             }

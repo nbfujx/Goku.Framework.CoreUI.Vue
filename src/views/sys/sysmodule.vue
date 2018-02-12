@@ -6,7 +6,7 @@
           <b-card :header="caption">
             <b-row style="margin-bottom: 10px">
               <b-col>
-                <Button @click="addModule()" type="success" icon="plus" class="opreate-btn">新增</Button>
+                <Button @click="addModule()" type="success" icon="plus" class="opreate-btn" >新增</Button>
                 <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">修改</Button>
                 <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">删除</Button>
               </b-col>
@@ -80,7 +80,9 @@
                 console.log(error);
               });
           },
-          addModule(){},
+          addModule(){
+            this.$router.push({ path: '/sys/system/sysmodule/add' })
+          },
           editModule(){
             this.$layer.alert(this.$refs.selection.getSelection())
           },
