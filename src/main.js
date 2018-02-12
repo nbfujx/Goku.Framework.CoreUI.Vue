@@ -8,15 +8,13 @@ import store from './store'
 import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
-import ZkTable from 'vue-table-with-tree-grid'
-import Treeselect from '@riophae/vue-treeselect'
-import '@riophae/vue-treeselect/dist/vue-treeselect.min.css'
+import 'vue-beauty/package/style/vue-beauty.min.css'
+import vueBeauty from 'vue-beauty'
 import layer from 'vue-layer'
 
 Vue.use(BootstrapVue)
 Vue.use(iView)
-Vue.use(ZkTable)
-Vue.use(Treeselect)
+Vue.use(vueBeauty)
 
 Vue.prototype.$layer = layer(Vue)
 Vue.prototype.$http = axios

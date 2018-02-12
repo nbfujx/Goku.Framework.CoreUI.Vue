@@ -18,7 +18,7 @@
         name: 'sysmoduleadd',
         data() {
           return {
-            caption:'<strong><i class="fa fa-align-justify"></i></strong> 模块新增',
+            caption:'<strong><i class="fa fa-align-justify"></i></strong> '+ this.$route.name,
           }
         },
         methods: {},

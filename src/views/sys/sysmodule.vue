@@ -16,6 +16,7 @@
         </b-col><!--/.col-->
       </b-row><!--/.row-->
     </div>
+    <BackTop></BackTop>
   </div>
 </template>
 
@@ -25,7 +26,7 @@
         name: 'sysmodule',
         data(){
           return {
-            caption:'<strong><i class="fa fa-align-justify"></i></strong> 模块列表',
+            caption:'<strong><i class="fa fa-align-justify"></i></strong> '+ this.$route.name,
             dic_ifShow:{"0":"否","1":"是"	},
             columns: [
               {

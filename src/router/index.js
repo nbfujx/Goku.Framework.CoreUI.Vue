@@ -15,7 +15,6 @@ import sysIndex from '@/views/sys/sysindex'
 import sysLog from '@/views/sys/syslog'
 import sysModule from '@/views/sys/sysModule'
 import sysModuleAdd from '@/views/sys/sysmoduleadd'
-import sysModuleEdit from '@/views/sys/sysmoduleedit'
 
 Vue.use(Router)
 
@@ -68,7 +67,7 @@ export default new Router({
                 {
                   path: 'edit',
                   name: '模块修改',
-                  component: sysModuleEdit
+                  component: sysModuleAdd
                 }
               ]
             }

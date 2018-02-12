@@ -35,7 +35,8 @@
         </b-col><!--/.col-->
       </b-row><!--/.row-->
     </div>
-    </div>
+   <BackTop></BackTop>
+  </div>
 </template>
 
 <script>
@@ -45,7 +46,7 @@
     name: 'syslog',
     data(){
        return {
-        caption:'<strong><i class="fa fa-align-justify"></i></strong> 日志列表',
+        caption:'<strong><i class="fa fa-align-justify"></i></strong> '+ this.$route.name,
         username:'',
         createdate:[new Date()-7,new Date()],
         pagesizeopts:[5,10,15,20],
