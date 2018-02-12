@@ -17,17 +17,20 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "@riophae/vue-treeselect": "^0.0.6",
     "axios": "^0.17.1",
     "bootstrap": "4.0.0-beta.2",
     "bootstrap-vue": "1.1.0",
     "chart.js": "2.7.1",
     "font-awesome": "^4.7.0",
+    "iview": "^2.9.2",
+    "jquery": "^2.2.3",
     "simple-line-icons": "^2.4.1",
     "vue": "2.5.6",
     "vue-chartjs": "3.0.2",
     "vue-router": "3.0.1",
-    "vuex": "^3.0.1",
-    "jquery" : "^2.2.3"
+    "vue-table-with-tree-grid": "^0.2.4",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "7.1.6",
