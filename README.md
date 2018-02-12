@@ -28,7 +28,7 @@
 |3.1.|模块新增||
 |3.2.|模块修改||
 |3.3.|模块删除||
-|3.4.|模块展示||
+|3.4.|模块展示|Y|
 |4.|权限管理||
 |4.1.|权限新增||
 |4.2.|权限修改||
@@ -42,6 +42,8 @@
 
 # 系统页面
 ### 1.日志管理
-![日志管理](http://images.cnblogs.com/cnblogs_com/nbfujx/1150339/o_QQ%e6%88%aa%e5%9b%be20180209205710.jpg)
+![日志管理](http://images.cnblogs.com/cnblogs_com/nbfujx/1150339/o_TIM%e6%88%aa%e5%9b%be20180212144432.png)
+### 2.模块管理
+![模块管理](http://images.cnblogs.com/cnblogs_com/nbfujx/1150339/o_TIM%e6%88%aa%e5%9b%be20180212144444.png)
 
 

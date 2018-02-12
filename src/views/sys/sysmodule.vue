@@ -6,12 +6,12 @@
           <b-card :header="caption">
             <b-row style="margin-bottom: 10px">
               <b-col>
-                <Button @click="addModule()" type="success" icon="plus" class="opreate-btn">查询</Button>
-                <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">重置</Button>
-                <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">重置</Button>
+                <Button @click="addModule()" type="success" icon="plus" class="opreate-btn">新增</Button>
+                <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">修改</Button>
+                <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">删除</Button>
               </b-col>
             </b-row>
-            <Table border ref="selection" :columns="columns" :data="data" :size="small"></Table>
+            <Table border ref="selection" :columns="columns" :data="tabledata" :size="small"></Table>
           </b-card>
         </b-col><!--/.col-->
       </b-row><!--/.row-->
@@ -66,21 +66,30 @@
                 ellipsis:true
               }
             ],
-            data:[{"description":"系统模块","id":"28c3ef4eefb111e7a2360a0027000038","ifShow":"1","indexPage":"sys/index","name":"系统模块","sort":1,"version":1},{"description":"BusService模块,webservice服务管理，后续开发功能","id":"63b2cf7eefb111e7a2360a0027000038","ifShow":"1","indexPage":"bus/index","name":"BusService模块","sort":2,"version":1},{"description":"","id":"01670f963c1f450daf19df1000666bd8","ifShow":"1","indexPage":"weixin/index","name":"微信模块","sort":3},{"description":"博客管理模块，后续开发功能","id":"6ad537e2327f421eb90964e1148ededb","ifShow":"1","indexPage":"blog/index","name":"博客模块","sort":3,"version":1}]
+            tabledata:[]
           }
         },
         methods: {
+          getTableData(){
+            this.$http.get('api/sysModule/getModuleForPaging')
+              .then((response) => {
+                console.log(response.data);
+                this.tabledata=response.data.rows;
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          },
           addModule(){},
           editModule(){
-            console.log(this.$refs.selection.getSelection())
             this.$layer.alert(this.$refs.selection.getSelection())
           },
           deleteModule(){
-            console.log(this.$refs.selection.getSelection())
+            this.$layer.alert(this.$refs.selection.getSelection())
           }
         },
         mounted() {
-
+            this.getTableData()
        }
     }
 </script>
