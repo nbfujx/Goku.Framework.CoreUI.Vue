@@ -15,6 +15,8 @@ import sysIndex from '@/views/sys/sysindex'
 import sysLog from '@/views/sys/syslog'
 import sysModule from '@/views/sys/sysModule'
 import sysModuleAdd from '@/views/sys/sysmoduleadd'
+import sysMenu from '@/views/sys/sysmenu'
+import sysMenuAdd from '@/views/sys/sysmenuadd'
 
 Vue.use(Router)
 
@@ -68,6 +70,31 @@ export default new Router({
                   path: 'edit',
                   name: '模块修改',
                   component: sysModuleAdd
+                }
+              ]
+            },
+            {
+              path: 'sysmenu',
+              name: '菜单管理',
+              redirect: '/sys/system/sysmenu/list',
+              component: {
+                render (c) { return c('router-view') }
+              },
+              children: [
+                {
+                  path: 'list',
+                  name: '菜单列表',
+                  component: sysMenu
+                },
+                {
+                  path: 'add',
+                  name: '菜单新增',
+                  component: sysMenuAdd
+                },
+                {
+                  path: 'edit',
+                  name: '菜单修改',
+                  component: sysMenuAdd
                 }
               ]
             }

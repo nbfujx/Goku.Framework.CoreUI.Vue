@@ -8,13 +8,12 @@ import store from './store'
 import axios from 'axios'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
-import 'vue-beauty/package/style/vue-beauty.min.css'
-import vueBeauty from 'vue-beauty'
+import ZkTable from 'vue-table-with-tree-grid'
 import layer from 'vue-layer'
 
 Vue.use(BootstrapVue)
 Vue.use(iView)
-Vue.use(vueBeauty)
+Vue.use(ZkTable)
 
 Vue.prototype.$layer = layer(Vue)
 Vue.prototype.$http = axios

@@ -57,6 +57,11 @@ export default {
             name: '模块管理',
             url: '/sys/system/sysmodule',
             icon: 'icon-puzzle'
+          },
+          {
+            name: '菜单管理',
+            url: '/sys/system/sysmenu',
+            icon: 'icon-puzzle'
           }]
       },
       {
