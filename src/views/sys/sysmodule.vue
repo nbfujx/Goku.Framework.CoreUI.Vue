@@ -7,8 +7,8 @@
             <b-row style="margin-bottom: 10px">
               <b-col>
                 <Button @click="addModule()" type="success" icon="plus" class="opreate-btn" >新增</Button>
-                <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">修改</Button>
-                <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">删除</Button>
+               <!-- <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">修改</Button>
+                <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">删除</Button>-->
               </b-col>
             </b-row>
             <Table border ref="selection" :columns="columns" :data="tabledata" :size="small"></Table>
@@ -29,11 +29,6 @@
             caption:'<strong><i class="fa fa-align-justify"></i></strong> '+ this.$route.name,
             dic_ifShow:{"0":"否","1":"是"	},
             columns: [
-              {
-                type: 'selection',
-                width: 60,
-                align: 'center'
-              },
               {
                 title: '模块名称',
                 key: 'name',
@@ -65,6 +60,11 @@
                 title: '模块描述',
                 key: 'description',
                 ellipsis:true
+              },
+              {
+                title: '操作',
+                key: '',
+                width:120
               }
             ],
             tabledata:[]

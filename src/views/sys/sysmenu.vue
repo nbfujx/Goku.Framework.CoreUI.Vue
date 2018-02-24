@@ -12,32 +12,32 @@
                 <b-row style="margin-bottom: 10px">
                   <b-col>
                     <Button @click="addModule()" type="success" icon="plus" class="opreate-btn" >新增</Button>
-                    <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">修改</Button>
-                    <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">删除</Button>
-                  </b-col>
-                </b-row>
-                <zk-table
-                  ref="menu"
-                  index-text="#"
-                  :data="menudata"
-                  :columns="menucolumn"
-                  :border="props.border"
-                  :tree-type="props.treeType"
-                  :is-fold="props.isFold"
-                  :expand-type="props.expandType"
-                  :selection-type="props.selectionType">
-                  <template slot="icon" scope="scope">
-                    <i v-bind:class="scope.row.icon"></i>
-                  </template>
-                  <template slot="ifShow" scope="scope">
-                    <span v-if="scope.row.ifShow==='0'">不展示</span>
-                    <span v-else>展示</span>
-                  </template>
-                </zk-table>
-              </b-col>
-            </b-row>
-          </b-card>
-        </b-col><!--/.col-->
+                    <!--  <Button @click="editModule()" type="success" icon="plus" class="opreate-btn">修改</Button>
+                      <Button @click="deleteModule()" type="error"    icon="close" class="opreate-btn">删除</Button>-->
+                    </b-col>
+                  </b-row>
+                  <zk-table
+                    ref="menu"
+                    index-text="#"
+                    :data="menudata"
+                    :columns="menucolumn"
+                    :border="props.border"
+                    :tree-type="props.treeType"
+                    :is-fold="props.isFold"
+                    :expand-type="props.expandType"
+                    :selection-type="props.selectionType">
+                    <template slot="icon" scope="scope">
+                      <i v-bind:class="scope.row.icon"></i>
+                    </template>
+                    <template slot="ifShow" scope="scope">
+                      <span v-if="scope.row.ifShow==='0'">不展示</span>
+                      <span v-else>展示</span>
+                    </template>
+                  </zk-table>
+                </b-col>
+              </b-row>
+            </b-card>
+          </b-col><!--/.col-->
       </b-row><!--/.row-->
     </div>
   </div>
@@ -90,13 +90,18 @@
           {
             label: '访问路径',
             prop: 'url',
+          },
+          {
+            label: '操作',
+            prop: '',
+            width: "120px"
           }
         ],
         props: {
           border: true,
           treeType: true,
           isFold: false,
-          selectionType: true,
+          selectionType: false,
           expandType: false,
         },
         selectModuleid:''

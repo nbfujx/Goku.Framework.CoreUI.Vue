@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb9165d7-c083-4668-ac7c-6d624002a648" name="Default" comment="模块新增，修改">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/sys/sysmenu.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/views/sys/sysmenuadd.vue" />
+    <list default="true" id="fb9165d7-c083-4668-ac7c-6d624002a648" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Full.vue" afterPath="$PROJECT_DIR$/src/containers/Full.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/sys/sysindex.vue" afterPath="$PROJECT_DIR$/src/views/sys/sysindex.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/sys/sysmenu.vue" afterPath="$PROJECT_DIR$/src/views/sys/sysmenu.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/sys/sysmodule.vue" afterPath="$PROJECT_DIR$/src/views/sys/sysmodule.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,30 +18,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sysmenu.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sysmenu.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/sys/sysmenu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="138" column="35" lean-forward="false" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+            <state relative-caret-position="482">
+              <caret line="96" column="23" lean-forward="false" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-row#0;n#b-col#1;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#2030#2116#0" expanded="false" />
-                <element signature="e#2182#2903#0" expanded="false" />
-                <element signature="e#3144#3471#0" expanded="false" />
-                <element signature="e#3492#3791#0" expanded="false" />
-                <element signature="e#3836#3916#0" expanded="false" />
+                <element signature="e#2089#2175#0" expanded="false" />
+                <element signature="e#3078#3225#0" expanded="false" />
+                <element signature="e#3303#3630#0" expanded="false" />
+                <element signature="e#3651#3950#0" expanded="false" />
+                <element signature="e#3995#4075#0" expanded="false" />
+                <element signature="e#4116#4218#0" expanded="false" />
+                <element signature="e#4240#4342#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -55,26 +41,14 @@
       <file leaf-file-name="sysmodule.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/sys/sysmodule.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+            <state relative-caret-position="443">
+              <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#1085#2095#0" expanded="false" />
-                <element signature="e#2188#2500#0" expanded="false" />
-                <element signature="e#2523#2605#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sysindex.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/sys/sysindex.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#treeselect#0;n#b-col#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#791#839#0" expanded="true" />
+                <element signature="e#2181#2493#0" expanded="false" />
+                <element signature="e#2516#2598#0" expanded="false" />
+                <element signature="e#2622#2702#0" expanded="false" />
+                <element signature="e#2728#2808#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -127,9 +101,9 @@
         <option value="$PROJECT_DIR$/src/containers/Full.vue" />
         <option value="$PROJECT_DIR$/src/views/sys/sysmenuadd.vue" />
         <option value="$PROJECT_DIR$/config/index.js" />
+        <option value="$PROJECT_DIR$/src/views/sys/sysindex.vue" />
         <option value="$PROJECT_DIR$/src/views/sys/sysmodule.vue" />
         <option value="$PROJECT_DIR$/src/views/sys/sysmenu.vue" />
-        <option value="$PROJECT_DIR$/src/views/sys/sysindex.vue" />
       </list>
     </option>
   </component>
@@ -371,7 +345,7 @@
       <workItem from="1517206730411" duration="538000" />
       <workItem from="1517211587402" duration="731000" />
       <workItem from="1517993052594" duration="68000" />
-      <workItem from="1517993465027" duration="76816000" />
+      <workItem from="1517993465027" duration="77120000" />
     </task>
     <task id="LOCAL-00001" summary="初始化一些菜单信息，调整下面包屑信息">
       <created>1518011090706</created>
@@ -457,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518426128900</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="菜单新增，修改">
+      <created>1519482196593</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1519482196593</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86622000" />
+    <option name="totallyTimeSpent" value="86926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,11 +492,12 @@
     <MESSAGE value="放弃layui,改用iview重写日志，模块两个页面，待续" />
     <MESSAGE value="模块管理" />
     <MESSAGE value="模块新增，修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="模块新增，修改" />
+    <MESSAGE value="菜单新增，修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="菜单新增，修改" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -935,19 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/sys/sysmodule.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1085#2095#0" expanded="false" />
-            <element signature="e#2188#2500#0" expanded="false" />
-            <element signature="e#2523#2605#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -956,29 +925,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/sys/sysmenu.vue">
+    <entry file="file://$PROJECT_DIR$/src/views/sys/sysindex.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="138" column="35" lean-forward="false" selection-start-line="138" selection-start-column="35" selection-end-line="138" selection-end-column="35" />
+        <state relative-caret-position="380">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b-row#0;n#b-col#1;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2030#2116#0" expanded="false" />
-            <element signature="e#2182#2903#0" expanded="false" />
-            <element signature="e#3144#3471#0" expanded="false" />
-            <element signature="e#3492#3791#0" expanded="false" />
-            <element signature="e#3836#3916#0" expanded="false" />
+            <element signature="n#style#0;n#treeselect#0;n#b-col#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#791#839#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/sys/sysindex.vue">
+    <entry file="file://$PROJECT_DIR$/src/views/sys/sysmodule.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        <state relative-caret-position="443">
+          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#treeselect#0;n#b-col#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#791#839#0" expanded="true" />
+            <element signature="n#style#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2181#2493#0" expanded="false" />
+            <element signature="e#2516#2598#0" expanded="false" />
+            <element signature="e#2622#2702#0" expanded="false" />
+            <element signature="e#2728#2808#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/sys/sysmenu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="96" column="23" lean-forward="false" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b-row#0;n#b-col#1;n#b-row#0;n#b-card#0;n#b-col#0;n#b-row#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2089#2175#0" expanded="false" />
+            <element signature="e#3078#3225#0" expanded="false" />
+            <element signature="e#3303#3630#0" expanded="false" />
+            <element signature="e#3651#3950#0" expanded="false" />
+            <element signature="e#3995#4075#0" expanded="false" />
+            <element signature="e#4116#4218#0" expanded="false" />
+            <element signature="e#4240#4342#0" expanded="false" />
           </folding>
         </state>
       </provider>
