@@ -97,7 +97,7 @@
     }
 </script>
 
-<style>
+<style scoped>
   .opreate-btn
   {
     margin:0 0 10px 15px;
